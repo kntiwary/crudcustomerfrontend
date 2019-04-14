@@ -1,0 +1,43 @@
+<h1 class="title">OverView</h1>
+<table *ngIf="customer.id" class="table">
+  <tbody>
+      <tr>
+          <th>
+            Name
+          </th>
+          <td>
+            {{customer.customer_name}}
+          </td>
+        </tr>
+        <tr>
+            <th>
+              Email
+            </th>
+            <td>
+              {{customer.email}}
+            </td>
+          </tr>
+          <tr>
+              <th>
+                Address
+              </th>
+              <td>
+                {{customer.address}}
+              </td>
+            </tr>
+            <tr>
+                <th>
+                  Contact
+                </th>
+                <td>
+                  {{customer.contact_number}}
+                </td>
+              </tr>
+  </tbody>
+
+</table>
+
+<div *ngIf="error" class="alert alert-danger" role="alert">
+    {{error}}
+  </div>
+  
